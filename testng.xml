@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <groups>
+  <run>
+  <exclude name="Regression Test"></exclude>
+  <include name="Smoke Test"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestNGDemo.NewTest"/>
+      <class name="TestNGDemo.LearnTestNG"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

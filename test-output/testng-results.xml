@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3069" started-at="2020-03-15T09:31:30Z" finished-at="2020-03-15T09:31:33Z">
+    <groups>
+      <group name="Smoke Test">
+        <method signature="LearnTestNG.doHomePageTest()[pri:0, instance:TestNGDemo.LearnTestNG@548b7f67]" name="doHomePageTest" class="TestNGDemo.LearnTestNG"/>
+        <method signature="NewTest.desting3()[pri:3, instance:TestNGDemo.NewTest@573f2bb1]" name="desting3" class="TestNGDemo.NewTest"/>
+        <method signature="NewTest.testing3()[pri:4, instance:TestNGDemo.NewTest@573f2bb1]" name="testing3" class="TestNGDemo.NewTest"/>
+      </group> <!-- Smoke Test -->
+    </groups>
+    <test name="Test" duration-ms="3069" started-at="2020-03-15T09:31:30Z" finished-at="2020-03-15T09:31:33Z">
+      <class name="TestNGDemo.NewTest">
+        <test-method status="FAIL" signature="desting3()[pri:3, instance:TestNGDemo.NewTest@573f2bb1]" name="desting3" duration-ms="1017" started-at="2020-03-15T15:01:30Z" finished-at="2020-03-15T15:01:31Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000
+	at org.testng.internal.BaseTestMethod.incrementCurrentInvocationCount(BaseTestMethod.java:666)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:69)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- desting3 -->
+        <test-method status="FAIL" signature="desting3()[pri:3, instance:TestNGDemo.NewTest@573f2bb1]" name="desting3" duration-ms="1005" started-at="2020-03-15T15:01:31Z" finished-at="2020-03-15T15:01:32Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:60)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- desting3 -->
+        <test-method status="FAIL" signature="desting3()[pri:3, instance:TestNGDemo.NewTest@573f2bb1]" name="desting3" duration-ms="1002" started-at="2020-03-15T15:01:32Z" finished-at="2020-03-15T15:01:33Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.desting3() didn't finish within the time-out 1000
+	at java.lang.Thread.currentThread(Native Method)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:64)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- desting3 -->
+        <test-method status="PASS" signature="testing3()[pri:4, instance:TestNGDemo.NewTest@573f2bb1]" name="testing3" duration-ms="3" started-at="2020-03-15T15:01:33Z" finished-at="2020-03-15T15:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing3 -->
+      </class> <!-- TestNGDemo.NewTest -->
+      <class name="TestNGDemo.LearnTestNG">
+        <test-method status="PASS" signature="doHomePageTest()[pri:0, instance:TestNGDemo.LearnTestNG@548b7f67]" name="doHomePageTest" duration-ms="4" started-at="2020-03-15T15:01:33Z" finished-at="2020-03-15T15:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doHomePageTest -->
+      </class> <!-- TestNGDemo.LearnTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
