@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 
 public class ExcelReading {
 	
@@ -87,6 +88,7 @@ public class ExcelReading {
     	//System.out.println(password);
     }
     
+    @DataProvider
     public Object[][] getData(){
     	
           
@@ -94,10 +96,15 @@ public class ExcelReading {
             int rowNum = excel.getRowCount("GmailData");
            
             Object[][] data = new Object[rowNum-1][colCount];
-           
+            // Object[][] data = new Object[2][2]
+            
+            
             for(int i=2; i<=rowNum; i++){
+            	
                 for(int j= 0; j<colCount; j++){
+                	
                     data[i-2][j]=excel.getCellData("GmailData", j, i);
+                    
                 }
             }
            
